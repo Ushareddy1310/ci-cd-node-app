@@ -35,13 +35,13 @@ ci-cd-node-app/
 ## 🐳 DockerHub Image
 
 DockerHub Repo:  
-👉 [`ushareddy1310/ci-cd-node-app`](https://hub.docker.com/r/ushareddy1310/ci-cd-node-app)
+👉 [`jakkaushareddy/ci-cd-node-app`](https://hub.docker.com/r/jakkaushareddy/ci-cd-node-app)
 
 You can pull and run it locally (or inside Codespaces):
 
 ```bash
-docker pull ushareddy1310/ci-cd-node-app
-docker run -p 5000:5000 ushareddy1310/ci-cd-node-app
+docker pull jakkaushareddy/ci-cd-node-app
+docker run -p 5000:5000 jakkaushareddy/ci-cd-node-app
 
 📦 How to Reproduce
 Clone this repo
@@ -55,4 +55,4 @@ Watch GitHub Actions build & push the image
 Test it using Docker or Codespaces
 
 
-Built with ❤️ by Ushareddy1310
+## Built with ❤️ by Ushareddy1310

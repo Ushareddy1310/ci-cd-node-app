@@ -54,5 +54,5 @@ Watch GitHub Actions build & push the image
 
 Test it using Docker or Codespaces
 
-
+---
 ## Built with ❤️ by Ushareddy1310

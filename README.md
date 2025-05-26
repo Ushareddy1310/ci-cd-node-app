@@ -1,44 +1,58 @@
-### This repository is no longer maintained!
+# 🚀 CI/CD Node.js App with Docker and GitHub Actions
 
-**For the most up to date test app to get you started on Heroku, head on over to [`node-js-getting-started`](https://github.com/heroku/node-js-getting-started).**
+This project demonstrates a complete **CI/CD pipeline** for a simple Node.js web application using **GitHub Actions** and **Docker**. On every push to the `main` branch, the workflow automatically:
+
+- Installs dependencies
+- (Optionally) runs tests
+- Builds a Docker image
+- Pushes the image to DockerHub
+
+> 💡 Bonus: The app is also tested and previewed using **GitHub Codespaces** with port forwarding.
 
 ---
 
-# node-js-sample
+## 🔧 Tech Stack
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+- **Node.js** + Express
+- **Docker** for containerization
+- **GitHub Actions** for CI/CD
+- **DockerHub** for image hosting
+- **GitHub Codespaces** for testing (no local Docker required)
 
-## Running Locally
+---
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+## 📁 Project Structure
 
-```sh
-git clone git@github.com:heroku/node-js-sample.git # or clone your own fork
-cd node-js-sample
-npm install
-npm start
-```
+ci-cd-node-app/
+├── index.js # Express app
+├── package.json # Node dependencies
+├── Dockerfile # Docker container definition
+└── .github/
+└── workflows/
+└── main.yml # GitHub Actions workflow
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-## Deploying to Heroku
+## 🐳 DockerHub Image
 
-```
-heroku create
-git push heroku master
-heroku open
-```
+DockerHub Repo:  
+👉 [`ushareddy1310/ci-cd-node-app`](https://hub.docker.com/r/ushareddy1310/ci-cd-node-app)
 
-Alternatively, you can deploy your own copy of the app using the web-based flow:
+You can pull and run it locally (or inside Codespaces):
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+```bash
+docker pull ushareddy1310/ci-cd-node-app
+docker run -p 5000:5000 ushareddy1310/ci-cd-node-app
 
-## Documentation
+📦 How to Reproduce
+Clone this repo
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+Set DOCKER_USERNAME and DOCKER_PASSWORD in GitHub repo secrets
 
-- [10 Habits of a Happy Node Hacker](https://blog.heroku.com/archives/2014/3/11/node-habits)
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+Push to main branch
+
+Watch GitHub Actions build & push the image
+
+Test it using Docker or Codespaces
+
+
+Built with ❤️ by Ushareddy1310

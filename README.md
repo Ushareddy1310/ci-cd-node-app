@@ -1,4 +1,4 @@
-# 🚀 CI/CD Node.js App with Docker and GitHub Actions
+"# 🚀 CI/CD Node.js App with Docker and GitHub Actions
 
 This project demonstrates a complete **CI/CD pipeline** for a simple Node.js web application using **GitHub Actions** and **Docker**. On every push to the `main` branch, the workflow automatically:
 
@@ -41,7 +41,7 @@ You can pull and run it locally (or inside Codespaces):
 
 ```bash
 docker pull jakkaushareddy/ci-cd-node-app
-docker run -p 5000:5000 jakkaushareddy/ci-cd-node-app
+docker run -p 5000:5000 jakkaushareddy/ci-cd-node-app```
 
 📦 How to Reproduce
 Clone this repo
